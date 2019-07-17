@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>Hand Detection</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"/>
+        <style>
+            .title{
+                width:80%;
+            }
+            #video{
+                border: 1px dotted black;
+                margin-top:10px;
+                border-radius: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <center><h2 class="title box has-background-grey-lighter">HandDetection <sub>POC</sub></h2></center>
+        <center>
+        <div id="video_div">
+        <video id="video"></video>
+        </div>
+        </center>
+        <audio id="audio" src="https://s3.ap-south-1.amazonaws.com/18suryateja.demo1/alert.mp3"></audio>
+        <canvas id="canvas"></canvas>
+        <script src="https://s3.ap-south-1.amazonaws.com/18suryateja.demo1/handtrack.js"></script>
+        <script src="./App.js"></script>
+    </body>
+</html>
